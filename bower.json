@@ -1,8 +1,9 @@
 {
   "name": "paper-range-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
-    "Iftach Sadeh <iftach.sadeh@desy.de>"
+    "Iftach Sadeh <iftach.sadeh@desy.de>",
+    "Justin Merz <jrmerz@ucdavis.edu>"
   ],
   "description": "A material design-style range-slider, composed of paper-slider elements, and using Polymer.IronRangeBehavior",
   "keywords": [
