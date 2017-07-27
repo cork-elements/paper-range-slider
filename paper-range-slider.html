@@ -113,7 +113,7 @@ See README.md for further details.
             }
         </style>
 
-        <div id="sliderOuterDiv_0" style="[[style]]">
+        <div id="sliderOuterDiv_0">
             <div id="sliderOuterDiv_1">
                 <!-- for debugging, add: to style the following: "border: 1px solid red" -->
               <div id='backDiv' class="divSpanWidth" on-down="_backDivDown" on-tap="_backDivTap"
@@ -162,16 +162,6 @@ See README.md for further details.
              * the width of the element in pixels.
              */
             sliderWidth: {
-                type: String,
-                value: "",
-                notify: true,
-                reflectToAttribute: true
-            },
-
-            /**
-             * the style attribute of the element.
-             */
-            style: {
                 type: String,
                 value: "",
                 notify: true,
@@ -340,7 +330,7 @@ See README.md for further details.
                 type: Boolean,
                 value: false,
                 notify: true
-            },
+            }
         },
 
         // initialization
@@ -430,8 +420,8 @@ See README.md for further details.
             document.body.insertBefore(beforeEle, document.body.children[0]);
             var height = beforeEle.offsetHeight / 2;  //console.log( 'qqq',beforeEle.offsetHeight)
 
-            this.style.paddingTop    = height+"px"
-            this.style.paddingBottom = height+"px"
+            this.$.sliderOuterDiv_0.style.paddingTop    = height+"px"
+            this.$.sliderOuterDiv_0.style.paddingBottom = height+"px"
 
             beforeEle.parentNode.removeChild(beforeEle);
             return;
@@ -1392,7 +1382,7 @@ See README.md for further details.
           value: function() {
               return [];
           }
-        },
+        }
       },
 
       observers: [
